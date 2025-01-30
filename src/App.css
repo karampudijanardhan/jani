@@ -779,6 +779,7 @@ nav a::after{
       text-align: center;
       position: relative;
       bottom: 980px;
+      font-weight: bold;
     }
    
 }

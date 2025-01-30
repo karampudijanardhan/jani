@@ -2,17 +2,17 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  position: sticky;
-  left: 0;
+  z-index: 1000;
 }
 body{
   align-items: center;
 }
 header{
-  position: relative;
+  height: 120px;
   width: 100%;
-  height: 100px;
-  background-color: rgba(41, 2, 41, 0.237);
+  top: 0;
+  z-index: 1000;
+  background-color: aquamarine;
 }
 .checkbut{
   font-size: 3rem;
@@ -23,14 +23,12 @@ header{
 
 }
 .page img{
-  position: relative;
   width: 100%;
   height: 500px;
 }
 img{
   width: 180px;
   height: 70px;
-  position: relative;
   top: 20px;
 }
 #check{
@@ -38,6 +36,7 @@ img{
 }
 nav{
   position: relative;
+  z-index: 999;
   padding: 10px;
   bottom: 50px;
   justify-content: space-between;
@@ -92,6 +91,18 @@ nav a::after{
     position: relative;
     top: 120px;
   }
+  .com img{
+    width: 100%;
+    height: 400px;
+    top: 700px;
+    position: relative;
+  }
+  .box img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 700px;
+  }
   .box{
     width: 350px;
     height: 298px;
@@ -107,6 +118,12 @@ nav a::after{
     position: relative;
     left: 150px;
     top: 20px;
+  }
+  .para p{
+    position: relative;
+    font-size: 1.3rem;
+    top: 1000px;
+    display: flex;
   }
   .box h2{
     position: relative;
@@ -194,6 +211,18 @@ nav a::after{
     top: 30px;
     padding: 10px;
   }
+  .vir img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 700px;
+  }
+  .anul img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 900px;
+  }
   .vir button{
     width: 100px;
     height: 30px;
@@ -265,6 +294,12 @@ nav a::after{
     text-align: center;
     top: 20px;
   }
+  .pay img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 900px;
+  }
   .pay p{
     position: relative;
     top: 30px;
@@ -308,6 +343,12 @@ nav a::after{
     top: 30px;
     padding: 7px;
   }
+  .book img{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 900px;
+  }
   .book button{
     width: 100px;
     height: 30px;
@@ -335,93 +376,98 @@ nav a::after{
   .footer{
     width: 100%;
     height: 500px;
-    background-color:rgba(0, 93, 180, 0.5);
+    background-color:rgba(7, 7, 210, 0.808);
     position: relative;
     top: 500px;
     align-items: center;
   }
   .footer p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    color: white;
     position: relative;
-    top: 60px;
-    left: 100px;
-  }
+    top: 20px;
+  } 
   .footer i{
-    font-size: 3rem;
-    color: tomato;
+    font-size: 2.3rem;
+    color: orangered;
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 20px;
   }
   .footer h2{
- position: relative;
- left: 600px;
- color: tomato;
- bottom: 70px;
-  }
-  .footer ul{
     position: relative;
-    left: 600px;
-    bottom: 70px;
-  }
-  .footer h3{
-    position: relative;
-    left: 900px;
-    bottom: 200px;
     color: tomato;
-  }
-  .footer ol{
-    position: relative;
-    left: 900px;
-    bottom: 200px;
-  }
-  .fot h2{
- position: relative;
- left: 950px;
- color: tomato;
- top: 100px;
-  }
-  .fot ul{
-    position: relative;
-    left: 600px;
-    top: 250px;
-    color: tomato;
-  }
-  .fot h1{
-    position: relative;
-    left: 550px;
-    top: 230px;
-    color: tomato;
-  }
-  .fot ol{
-    position: relative;
-    left: 1000px;
-    top: 140px;
-    text-decoration: none;
-  }
-  .fot a{
-    text-decoration: none;
-    color: tomato;
-  }
-  .fot i{
-    font-size: 2rem;
-    color: tomato;
-    border: 2px solid tomato;
-    border-radius: 50px;
-    background-color:rgba(8, 183, 198, 0.621);
-    position: relative;
-    align-items: center;
-    top: 160px;
-    left: 600px;
-  }
-  .fot p{
-    font-size: 1.3rem;
-    text-align: center;
-    position: relative;
-    top: 180px;
-    
-  }
-
+    top: 40px;
+     }
+     .footer ul{
+       position: relative;
+       top: 60px;
+       color: #fff;
+       
+     }
+     .footer h3{
+       position: relative;
+        top:65px;
+        font-size: 1.3rem;
+       color: tomato;
+     }
+     .footer ol{
+       position: relative;
+       color: #fff;
+       top: 90px;
+     }
+     .fot h2{
+      position: relative;
+      color: tomato;
+      float: right;
+      top: 250px;
+      left: 400px;
+       }
+       .fot ol{
+        position: relative;
+        float: right;
+        top: 320px;
+        left: 520px;
+      }
+       .fot h1{
+         position: relative;
+         color: tomato;
+         top: 80px;
+         float: right;
+         right: 10px;
+         
+       }
+       .fot ul{
+        position: relative;
+        float: right;
+        top: 160px;
+        left: 290px;
+      }
+       
+       .fot a{
+         text-decoration: none;
+         color: #fff;
+       }
+       .fot i{
+        font-size: 3rem;
+        color: tomato;
+        border: 2px solid tomato;
+        border-radius: 50px;
+        background-color:rgba(8, 183, 198, 0.621);
+        position: relative;
+        align-items: center;
+        float: right;
+        top: 350px;
+      }
+      .fot p{
+        font-size: 1.3rem;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        float: right;
+        top: 450px;
+        left: 200px;
+      }
+  
 @media only screen and (max-width: 890px) {
   .checkbut{
     font-size: 3rem;
@@ -471,13 +517,19 @@ nav a::after{
     border-radius: 30px;
     top: 110px;
   }
+  .wel h1{
+    align-items: center;
+  }
+  .wel h2{
+    text-align: center;
+  }
   .box{
     width: 300px;
     height: 320px;
     border: 2px solid green;
     position: relative;
     top: 180px;
-    left:4px;
+    left:170px;
     justify-content: space-between;
   }
   .box i{
@@ -514,8 +566,8 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    bottom: 139px;
-    left: 313px;
+    left: 170px;
+    top: 200px;
     justify-content: space-between;
   }
   .com i{
@@ -552,8 +604,8 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    left: 4px;
-    bottom: 100px;
+    left: 170px;
+    top: 220px;
     justify-content: space-between;
   }
   .vir i{
@@ -590,8 +642,8 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    bottom: 420px;
-    left: 313px;
+    top: 930px;
+    left: 170px;
     justify-content: space-between;
   }
   .anul p{
@@ -604,8 +656,8 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    bottom: 400px;
-    left: 4px;
+    left: 170px;
+    bottom: 80px;
     justify-content: space-between;
   }
   .pay i{
@@ -642,8 +694,8 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    bottom: 720px;
-    left: 314px;
+    left: 170px;
+    bottom: 60px;
     justify-content: space-between;
   }
   .book i{
@@ -679,8 +731,8 @@ nav a::after{
     width: 180px;
     height: 60px;
     position: relative;
-    bottom: 680px;
-    left: 230px;
+    top: 400px;
+    left: 250px;
     border: 2px solid aqua;
     background-color: aqua;
     font-size: 1.3rem;
@@ -690,67 +742,74 @@ nav a::after{
   .footer{
     width: 100%;
     height: 1000px;
-    background-color:rgba(0, 93, 180, 0.5);
+    background-color:rgba(7, 7, 210, 0.808);
     position: relative;
     bottom: 600px;
   }
   .footer p{
-    font-size: 1.3rem;
     position: relative;
     left: 20px;
   }
   .footer i{
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: tomato;
     position: relative;
     left: 20px;
+    top: 50px;
   }
   .footer h2{
  position: relative;
  left: 20px;
  color: tomato;
- top: 200px;
+ top: 100px;
+ text-align: center;
   }
   .footer ul{
     position: relative;
-    left: 100px;
-    top: 230px;
+    left: 300px;
+    top: 140px;
   }
   .footer h3{
     position: relative;
-    left: 300px;
-     top:65px;
+     bottom: 200px;
+     left: 20px;
+     top: 200px;
+     text-align: center;
+
      font-size: 1.3rem;
+
     color: tomato;
   }
   .footer ol{
     position: relative;
     left: 300px;
-    top: 100px;
-    left: 400px;
+    top: 230px;
   }
   .fot h2{
     position: relative;
-    left: 400px;
     color: tomato;
-    bottom: 1120px;
+    left: -100%;
+    text-align: center;
+    top: 300px;
      }
      .fot ul{
        position: relative;
        left: 100px;
-       bottom: 970px;
+       bottom: 990px;
      }
      .fot h1{
        position: relative;
-       left: 20px;
-       bottom: 1000px;
+       text-align: center;
+       right: 130px;
        color: tomato;
+       bottom: 40px;
      }
      .fot ol{
        position: relative;
-       left: 450px;
-       bottom: 1100px;
+       left: -100px;
+       bottom:120px;
        text-decoration: none;
+       left: -100%;
      }
      .fot a{
        text-decoration: none;
@@ -758,21 +817,63 @@ nav a::after{
      }
      .fot i{
       font-size: 5rem;
-      color: tomato;
+      background-color: #fff;
+      color:black;
       border: 2px solid tomato;
       border-radius: 50px;
-      background-color:rgba(8, 183, 198, 0.621);
       position: relative;
       align-items: center;
-      bottom: 1000px;
+      top: 270px;
       left: 250px;
     }
     .fot p{
       font-size: 1.3rem;
-      text-align: center;
       position: relative;
-      bottom: 980px;
+      float: left;
+      top: 340px;
+      left: 180px;
       font-weight: bold;
     }
-   
+    .book img{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      top: 900px;
+      display: none;
+    }
+    .vir img{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      top: 700px;
+      display: none;
+    }
+    .pay img{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      top: 900px;
+      display: none;
+    }
+    .anul img{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      top: 900px;
+      display: none;
+    }
+    .com img{
+      width: 100%;
+      height: 400px;
+      top: 700px;
+      position: relative;
+      display: none;
+    }
+    .box img{
+      width: 100%;
+      height: 400px;
+      position: relative;
+      top: 700px;
+      display: none;
+    }
 }

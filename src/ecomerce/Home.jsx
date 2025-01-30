@@ -101,7 +101,7 @@ const Footer = () => {
 }
 const Foot = () => {
     return ( 
-        <div className="fot">
+        <footer className="fot">
          <h1>COMPLIANCE & TAX</h1>
          <ul>
            <li><a href="">Channels</a></li>
@@ -118,7 +118,7 @@ const Foot = () => {
          </ol>
          <i class='bx bx-down-arrow-alt'></i>
          <p>@2025 Amazon.All rights Reserved</p>
-        </div>
+        </footer>
      );
 }
 

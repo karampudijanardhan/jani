@@ -1,24 +1,16 @@
 *{
   margin: 0px;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
-  left: 0;
   position: sticky;
+  left: 0;
 }
 body{
-  position: relative;
-  display: inline;
   align-items: center;
-  justify-content: center;
-  left: 0;
-  right: o;
-  width: 100%;
-  height: 100vh;
-
 }
 header{
   position: relative;
-  width: auto;
+  width: 100%;
   height: 100px;
   background-color: rgba(41, 2, 41, 0.237);
 }
@@ -342,10 +334,11 @@ nav a::after{
   }
   .footer{
     width: 100%;
-    height: 1000px;
+    height: 500px;
     background-color:rgba(0, 93, 180, 0.5);
     position: relative;
-    bottom: 780px;
+    top: 500px;
+    align-items: center;
   }
   .footer p{
     font-size: 1.3rem;
@@ -386,24 +379,24 @@ nav a::after{
  position: relative;
  left: 950px;
  color: tomato;
- bottom: 1590px;
+ top: 100px;
   }
   .fot ul{
     position: relative;
     left: 600px;
-    bottom: 1450px;
+    top: 250px;
     color: tomato;
   }
   .fot h1{
     position: relative;
     left: 550px;
-    bottom: 1470px;
+    top: 230px;
     color: tomato;
   }
   .fot ol{
     position: relative;
     left: 1000px;
-    bottom: 1560px;
+    top: 140px;
     text-decoration: none;
   }
   .fot a{
@@ -411,24 +404,25 @@ nav a::after{
     color: tomato;
   }
   .fot i{
-    font-size: 5rem;
+    font-size: 2rem;
     color: tomato;
     border: 2px solid tomato;
     border-radius: 50px;
     background-color:rgba(8, 183, 198, 0.621);
     position: relative;
     align-items: center;
-    bottom: 1400px;
+    top: 160px;
     left: 600px;
   }
   .fot p{
     font-size: 1.3rem;
     text-align: center;
     position: relative;
-    bottom: 1370px;
+    top: 180px;
+    
   }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 890px) {
   .checkbut{
     font-size: 3rem;
     float: right;

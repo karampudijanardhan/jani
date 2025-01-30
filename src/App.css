@@ -45,7 +45,6 @@ nav{
 
 nav a{
   position: relative;
-  padding: 10px;
   font-size: 1.5rem;
   text-decoration: none;
   cursor: pointer;
@@ -109,7 +108,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     top: 180px;
-    left: 50px;
+    left: 20px;
     justify-content: space-between;
   }
   .box i{
@@ -153,7 +152,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     bottom: 117px;
-    left: 450px;
+    left: 400px;
     justify-content: space-between;
   }
   .com i{
@@ -190,8 +189,8 @@ nav a::after{
     height: 298px;
     border: 2px solid green;
     position: relative;
-    left: 850px;
-    bottom: 413px;
+    left: 780px;
+    bottom: 415px;
     justify-content: space-between;
   }
   .vir i{
@@ -241,7 +240,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     bottom: 380px;
-    left: 50px;
+    left: 20px;
     justify-content: space-between;
   }
   .anul i{
@@ -279,7 +278,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     bottom: 678px;
-    left: 450px;
+    left: 400px;
     justify-content: space-between;
   }
   .pay i{
@@ -323,7 +322,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     bottom: 976px;
-    left: 850px;
+    left: 780px;
     justify-content: space-between;
   }
   .book i{
@@ -513,9 +512,9 @@ nav a::after{
     font-size: 3rem;
     color: tomato;
     position: relative;
-    left: 270px;
+    left: 320px;
     border-radius: 30px;
-    top: 110px;
+    top: 120px;
   }
   .wel h1{
     align-items: center;
@@ -529,7 +528,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     top: 180px;
-    left:170px;
+    left:30px;
     justify-content: space-between;
   }
   .box i{
@@ -537,7 +536,7 @@ nav a::after{
     color: rgb(13, 13, 188);
     position: relative;
     left: 130px;
-    top: 20px;
+    top: 10px;
   }
   .box h1{
     position: relative;
@@ -566,7 +565,7 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    left: 170px;
+    left: 30px;
     top: 200px;
     justify-content: space-between;
   }
@@ -604,7 +603,7 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    left: 170px;
+    left: 30px;
     top: 220px;
     justify-content: space-between;
   }
@@ -643,7 +642,7 @@ nav a::after{
     border: 2px solid green;
     position: relative;
     top: 930px;
-    left: 170px;
+    left: 30px;
     justify-content: space-between;
   }
   .anul p{
@@ -656,7 +655,7 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    left: 170px;
+    left: 30px;
     bottom: 80px;
     justify-content: space-between;
   }
@@ -694,7 +693,7 @@ nav a::after{
     height: 320px;
     border: 2px solid green;
     position: relative;
-    left: 170px;
+    left: 30px;
     bottom: 60px;
     justify-content: space-between;
   }
@@ -732,7 +731,7 @@ nav a::after{
     height: 60px;
     position: relative;
     top: 400px;
-    left: 250px;
+    left: 110px;
     border: 2px solid aqua;
     background-color: aqua;
     font-size: 1.3rem;
@@ -748,33 +747,32 @@ nav a::after{
   }
   .footer p{
     position: relative;
-    left: 20px;
+    left: 10px;
+    font-size: 1rem;
   }
   .footer i{
     font-size: 2.4rem;
     color: tomato;
     position: relative;
-    left: 20px;
+    left: 10px;
     top: 50px;
   }
   .footer h2{
  position: relative;
- left: 20px;
+ left: 10px;
  color: tomato;
  top: 100px;
- text-align: center;
   }
   .footer ul{
     position: relative;
-    left: 300px;
+    left: 50px;
     top: 140px;
   }
   .footer h3{
     position: relative;
      bottom: 200px;
-     left: 20px;
+     left: 10px;
      top: 200px;
-     text-align: center;
 
      font-size: 1.3rem;
 
@@ -782,7 +780,7 @@ nav a::after{
   }
   .footer ol{
     position: relative;
-    left: 300px;
+    left: 50px;
     top: 230px;
   }
   .fot h2{
@@ -794,20 +792,21 @@ nav a::after{
      }
      .fot ul{
        position: relative;
-       left: 100px;
+       float: left;
+       left: 50px;
        bottom: 990px;
      }
      .fot h1{
        position: relative;
        text-align: center;
-       right: 130px;
+       right: 300px;
        color: tomato;
        bottom: 40px;
      }
      .fot ol{
        position: relative;
-       left: -100px;
-       bottom:120px;
+
+      top: 200px;
        text-decoration: none;
        left: -100%;
      }
@@ -824,14 +823,14 @@ nav a::after{
       position: relative;
       align-items: center;
       top: 270px;
-      left: 250px;
+      left: 0px;
     }
     .fot p{
       font-size: 1.3rem;
       position: relative;
       float: left;
       top: 340px;
-      left: 180px;
+      left: 10px;
       font-weight: bold;
     }
     .book img{

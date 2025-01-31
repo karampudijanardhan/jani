@@ -16,9 +16,9 @@ header{
 }
 .checkbut{
   font-size: 3rem;
-  float: right;
+  float: left;
+  display: none ;
   top: 20px;
-  display: none;
   cursor: pointer;
 
 }
@@ -36,8 +36,7 @@ img{
 }
 nav{
   position: relative;
-  z-index: 999;
-  padding: 10px;
+  padding: 2px;
   bottom: 50px;
   justify-content: space-between;
   align-items: center;
@@ -512,15 +511,17 @@ nav a::after{
     font-size: 3rem;
     color: tomato;
     position: relative;
-    left: 320px;
+    left: 270px;
     border-radius: 30px;
     top: 120px;
   }
   .wel h1{
     align-items: center;
+    font-size: 1.5rem;
   }
   .wel h2{
     text-align: center;
+    font-size: 1.5rem;
   }
   .box{
     width: 300px;
@@ -792,14 +793,16 @@ nav a::after{
      }
      .fot ul{
        position: relative;
-       float: left;
-       left: 50px;
-       bottom: 990px;
+       float:left;
+       left: -190px;
      }
      .fot h1{
        position: relative;
        text-align: center;
-       right: 300px;
+       float: left;
+       font-size: 1.5rem;
+       top: 100px;
+       left: 20px;
        color: tomato;
        bottom: 40px;
      }
@@ -815,21 +818,21 @@ nav a::after{
        color: #fff;
      }
      .fot i{
-      font-size: 5rem;
-      background-color: #fff;
+      font-size: 3rem;
+      background-color:tomato;
       color:black;
       border: 2px solid tomato;
       border-radius: 50px;
       position: relative;
       align-items: center;
-      top: 270px;
-      left: 0px;
+      top: 320px;
+      left: -460px;
     }
     .fot p{
       font-size: 1.3rem;
       position: relative;
       float: left;
-      top: 340px;
+      top: 380px;
       left: 10px;
       font-weight: bold;
     }

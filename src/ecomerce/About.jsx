@@ -87,7 +87,7 @@ const Footer = () => {
     return ( 
     <footer className="footer">
          <p>Design outstanding interfaces with
-            advanced Figma features in<br></br> a matter of minites.</p>
+            advanced<br></br> Figma features a matter of minites.</p>
             <i class='bx bxl-facebook-circle'></i>
             <i class='bx bxl-google'></i>
             <i class='bx bxl-apple'></i>

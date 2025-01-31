@@ -1,8 +1,11 @@
-*{
+/* *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   z-index: 1000;
+} */
+a {
+  text-decoration: none;
 }
 body{
   align-items: center;
@@ -13,6 +16,20 @@ header{
   top: 0;
   z-index: 1000;
   background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-cont{
+  margin: 20px 0;
+  text-align: center;
+}
+.services-card-cont{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+  justify-content: center;
 }
 .checkbut{
   font-size: 3rem;
@@ -24,7 +41,7 @@ header{
 }
 .page img{
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 img{
   width: 180px;
@@ -35,22 +52,18 @@ img{
   display: none;
 }
 nav{
-  position: relative;
-  padding: 2px;
-  bottom: 50px;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px;
 }
 
 nav a{
-  position: relative;
   font-size: 1.5rem;
   text-decoration: none;
   cursor: pointer;
   gap: 10px;
   left: 450px;
   margin-left: 15px;
-
+  font-weight: 500;
+  transition: 0.3s;
 }
 nav a::after{
   content: '';
@@ -70,24 +83,17 @@ nav a::after{
   }
   .wel h1{
     text-align: center;
-    position: relative;
-    top: 100px;
     color: orange;
   }
   .wel i{
     font-size: 3rem;
     color:tomato;
-    position: relative;
-    left: 590px;
     border-radius: 30px;
-    top: 110px;
   }
   .wel h2{
     color:orange;
     font-size: 1.8rem;
     text-align: center;
-    position: relative;
-    top: 120px;
   }
   .com img{
     width: 100%;
@@ -103,19 +109,18 @@ nav a::after{
   }
   .box{
     width: 350px;
-    height: 298px;
-    border: 2px solid green;
     position: relative;
-    top: 180px;
-    left: 20px;
-    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: grey 1px 1px 8px 1px;
+    transition: 0.3s;
+  }
+  .box:hover{
+    transform: rotate(3deg);
   }
   .box i{
     font-size: 2.4rem;
     color: rgb(13, 13, 188);
-    position: relative;
-    left: 150px;
-    top: 20px;
   }
   .para p{
     position: relative;
@@ -124,26 +129,20 @@ nav a::after{
     display: flex;
   }
   .box h2{
-    position: relative;
     text-align: center;
-    top: 20px;
   }
   .box p{
-    position: relative;
-    top: 30px;
-    padding: 7px;
+    margin: 0;
   }
   .box button{
-    width: 100px;
-    height: 30px;
-    position: relative;
-    top: 40px;
     background: transparent;
-    align-items: center;
-    left: 110px;
-    color:tomato;
+    color: tomato;
     font-size: 1rem;
-
+    border: none;
+    border-radius: 4px;
+    box-shadow: grey 1px 1px 5px 1px;
+    padding: 8px;
+    font-weight: 600;
   }
   .com{
     width: 350px;
@@ -359,114 +358,154 @@ nav a::after{
     font-size: 1rem;
 
   }
+  .all{
+    text-align: center;
+    padding-bottom: 50px;
+  }
   .all button{
     width: 180px;
-    height: 60px;
-    position: relative;
-    bottom: 900px;
-    left: 500px;
-    border: 2px solid aqua;
+    border: none;
     background-color: aqua;
     font-size: 1.3rem;
     font-weight: 400;
     border-radius: 20px;
+    text-align: center;
+    padding: 8px;
+    transition: 0.3s;
+  }
+  .all button:hover{
+    transform: scale(1.1);
   }
   .footer{
-    width: 100%;
-    height: 500px;
     background-color:rgba(7, 7, 210, 0.808);
-    position: relative;
-    top: 500px;
     align-items: center;
+    padding: 50px 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .footer p{
     font-size: 1.2rem;
     color: white;
-    position: relative;
-    top: 20px;
   } 
   .footer i{
     font-size: 2.3rem;
     color: orangered;
-    position: relative;
-    top: 20px;
   }
-  .footer h2{
-    position: relative;
+  .footer h2,h1{
     color: tomato;
-    top: 40px;
-     }
+  }
      .footer ul{
-       position: relative;
-       top: 60px;
        color: #fff;
        
      }
      .footer h3{
-       position: relative;
-        top:65px;
-        font-size: 1.3rem;
-       color: tomato;
+      font-size: 1.3rem;
+      color: tomato;
      }
-     .footer ol{
-       position: relative;
+     .footer ol,a{
        color: #fff;
-       top: 90px;
      }
      .fot h2{
-      position: relative;
       color: tomato;
-      float: right;
-      top: 250px;
-      left: 400px;
+      
        }
        .fot ol{
-        position: relative;
-        float: right;
-        top: 320px;
-        left: 520px;
+       
       }
        .fot h1{
-         position: relative;
          color: tomato;
-         top: 80px;
-         float: right;
-         right: 10px;
          
        }
        .fot ul{
-        position: relative;
-        float: right;
-        top: 160px;
-        left: 290px;
+  
       }
        
        .fot a{
          text-decoration: none;
          color: #fff;
        }
-       .fot i{
+       .copyright-cont{
+        text-align: center;
+       }
+       .copyright-cont i{
         font-size: 3rem;
         color: tomato;
         border: 2px solid tomato;
         border-radius: 50px;
         background-color:rgba(8, 183, 198, 0.621);
-        position: relative;
-        align-items: center;
-        float: right;
-        top: 350px;
       }
-      .fot p{
+      .copyright-cont p{
         font-size: 1.3rem;
         text-align: center;
-        position: relative;
         font-weight: bold;
-        float: right;
-        top: 450px;
-        left: 200px;
       }
+
+  .footer-details-cont{
+    display: flex;
+    gap: 20px;
+    flex-wrap:wrap;
+  }
+  .social-logos-cont{
+    width: 30%;
+  }
+  @media only screen and (max-width: 890px){
+    nav{
+      position: absolute;
+      top: -350px;
+      display: flex;
+      flex-direction: column;
+      background: aquamarine;
+      z-index: 999;
+      transition: 0.5s;
+    }
+    nav.opened{
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      background: aquamarine;
+      z-index: 999;
+    }
+    .checkbut{
+      display: block;
+    }
+    nav a{
+      font-size: 24px;
+      color: black;
+      font-weight: 500;
+      padding: 5px 0;
+    }
+    nav a:hover{
+      color: tomato;
+    }
+    nav a::after{
+      height: 0;
+    }
+    .social-logos-cont{
+      width: 100%;
+    }
+    .page img{
+      height: 200px;
+    }
+    .wel h1{
+      font-size: 24px;
+    }
+    .wel h2{
+      font-size: 18px;
+    }
+    .box h2{
+      margin: 5px 0 10px;
+    }
+    .footer p{
+      font-size: 14px;
+    }
+    .copyright-cont i {
+      font-size: 35px;
+    }
+  }
   
-@media only screen and (max-width: 890px) {
+ /* @media only screen and (max-width: 890px) {
   .checkbut{
     font-size: 3rem;
     float: right;
@@ -878,4 +917,4 @@ nav a::after{
       top: 700px;
       display: none;
     }
-}
+} */
